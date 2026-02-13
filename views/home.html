@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dream Vacation</title>
+    <link rel="stylesheet" href="/style/style.css">
+    <script src="/script/script.js" defer></script>
+    <link rel="icon" href="/img/favicon.webp">
+</head>
+<body>
+
+    <div class="background">
+
+        <div class="card">
+
+            <!-- img and title-->
+            <div class="card-header">
+                <h1>Book Your Dream Vacation</h1>
+            </div>
+
+            <!--form-->
+            <div class="card-body">
+
+                <form id="vacation-form" action="/submit-req" method="post">
+
+                    <div class="form-group">
+                        <label for="destination">Destination</label>
+                        <select id="destination">
+                            <option value="none">Choose a destination...</option>
+                            <option>Bali, Indonesia</option>
+                            <option>Paris, France</option>
+                            <option>Tokyo, Japan</option>
+                            <option>Maldives</option>
+                            <option>New York City, USA</option>
+                        </select>
+                        <span class="err" id="err-destination">Destination is required</span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="date">Departure Date</label>
+                        <input type="date" id="date">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="travelers">Number of Travelers</label>
+                        <input type="number" id="travelers">
+                        <span class="err" id="err-travelers">Please enter number of passengers</span>
+                    </div>
+
+                    <button type="submit" class="btn">
+                        Find My Vacation
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+        
+    </div>
+    <footer> <a href="https://github.com/DennysSaenz123/midterm">GitHub Repository</a></footer>
+
+</body>
+</html>

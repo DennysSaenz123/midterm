@@ -1,0 +1,116 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Background */
+.background {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1e73be;
+}
+
+/* Card Container */
+.card {
+    width: 800px;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+
+.card-header {
+    background: url("../img/scene.jpg") center/cover no-repeat;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-header h1 {
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    background: rgba(0,0,0,0.4); /* optional dark overlay */
+    padding: 10px 20px;
+    border-radius: 6px;
+}
+
+/* Card body */
+.card-body {
+    padding: 40px;
+}
+
+
+/* Form Styling */
+.form-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+input, select {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+/* Button */
+.btn {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 25px;
+    background-color: #1e73be;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: #1e73be;
+    color: white;
+}
+
+.err {
+    display: none;
+    color: red;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .card {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .card-left, .card-right {
+        width: 100%;
+    }
+
+    .card-left {
+        height: 200px;
+    }
+}
